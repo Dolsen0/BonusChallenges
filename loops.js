@@ -36,3 +36,19 @@ function reverseArray(arr){
 }
 
 console.log(reverseArray(arr1))
+
+
+//Given a number n Calculate the factorial of the number
+
+// loop through N - 0. each result should be added into an array that will than return the result of
+// every number being multiplied
+
+function factorial(num){
+    let result = 1
+    for(let i = num; i >= 1; i--){
+        result = result * i
+    }return(result)
+
+}
+
+console.log(factorial(10))
