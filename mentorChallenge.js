@@ -8,7 +8,7 @@ function incrementalSum(num){
     }   return result
 }
 
-console.log(incrementalSum(3))
+// console.log(incrementalSum(3))
 
 
 // 2. Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
@@ -29,7 +29,7 @@ function boom(arr){
     }
 }
 
-console.log(boom(arr))
+// console.log(boom(arr))
 
 
 
@@ -39,14 +39,18 @@ console.log(boom(arr))
 // Test case: 1000 => 4
 // Test case: 12 => 2
 
+// loop through a number until it no longer divisable by 10. Each 10th place should be stored as a value. ie 10th, 100th, 100th, etc.
 
 
-let num = 3576
+// function takes value greater than 0. Will work with integers or floats but will provide results for positive numbers and not negative integers at this current time.. 
 
 
-function digitCount(int){
-   let stringNum = int.toString()
-   return stringNum.length
+let num = -934.99
+
+function digitCountUpdate(int){
+    let result = 1
+    while((int /= 10) >= 1){result++}
+    return result
 }
 
-console.log(digitCount(num))
+console.log(digitCountUpdate(num))
