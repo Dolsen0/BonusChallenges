@@ -2,20 +2,28 @@
 
 // Note: in order to avoid hardcoded solutions, the size of your code is limited to 1000 characters
 
-// 100 words 590 characters
- 
-  
-  function bottleBeerLyrics(){
-    lyrics = []
-    for (i = 99; i > 0; i--){
-        lyrics = lyrics + `\n${i} bottles of beer on the wall, \n${i} bottles of beer.\n Take one down and pass it around, \n${ i - 1 } bottles of beer on the wall. \n`
-    }if(i = 1){
-        lyrics = lyrics + `\n${i} bottle of beer on the wall, \n${i} bottle of beer. \nTake one down and pass it around, \nno more bottles of beer on the wall. `
-    }else{
-        lyrics = lyrics + `\nno more bottle of beer on the wall, \nno more bottle of beer. \nGo to the store and buy some more, \n99 bottles of beer on the wall. `
-    }
-    return lyrics
-  }
+// 94 words 573 characters
 
-  console.log(bottleBeerLyrics())
-  console.log(typeof lyrics)
+function bottleBeerLyrics() {
+  lyrics = [];
+  for (i = 99; i > 0; i--) {
+    lyrics.push(
+      `${i} bottles of beer on the wall, ${i} bottles of beer. Take one down and pass it around, ${
+        i - 1
+      } bottles of beer on the wall. `
+    );
+  }
+  if ((i = 1)) {
+    lyrics.push(
+      `${i} bottle of beer on the wall, ${i} bottle of beer. Take one down and pass it around, no more bottles of beer on the wall. `
+    );
+  } else {
+    lyrics.push(
+      `no more bottle of beer on the wall, no more bottle of beer. Go to the store and buy some more, 99 bottles of beer on the wall. `
+    );
+  }
+  return lyrics;
+}
+
+console.log(bottleBeerLyrics());
+console.log(typeof lyrics);
