@@ -6,7 +6,7 @@
 
 function bottleBeerLyrics() {
   lyrics = [];
-  for (i = 99; i > 0; i--) {
+  for (i = 99; i >= 0; i--) {
     lyrics.push(
       `${i} bottles of beer on the wall, ${i} bottles of beer. Take one down and pass it around, ${
         i - 1
